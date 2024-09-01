@@ -24,6 +24,6 @@ int main()
 	bool full = isfull(SL);
 	printf("\nIs it full? %s", full ? "Yes" : "No");
 
-	makeNULL(&SL);
-	display(SL);
+	// makeNULL(&SL);
+	// display(SL);
 }
