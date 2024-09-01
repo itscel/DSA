@@ -3,7 +3,7 @@
 
 int main()
 {
-    CBase CB;
+    VHeap CB;
 
     init(&CB);
     insert(&CB, 'C');

@@ -13,9 +13,9 @@ typedef struct
 {
     Node elem[MAX];
     int avail;
-} CBase;
+} VHeap;
 
-void init(CBase *CB)
+void init(VHeap *CB)
 {
     int i;
 
@@ -26,7 +26,7 @@ void init(CBase *CB)
     CB->avail = 9;
 }
 
-void insert(CBase *CB, char elem)
+void insert(VHeap *CB, char elem)
 {
     int x;
     if (CB->avail > -1)
@@ -36,7 +36,7 @@ void insert(CBase *CB, char elem)
     }
 }
 
-void display(CBase CB)
+void display(VHeap CB)
 {
     int x;
     if (CB.avail <= MAX - 1)
