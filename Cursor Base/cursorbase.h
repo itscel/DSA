@@ -43,7 +43,7 @@ void display(CBase CB)
     {
         for (x = MAX - 1; x != CB.avail; x = CB.elem[x].next)
         {
-            printf("Value: %d", CB.elem[x].data);
+            printf("Value: %c", CB.elem[x].data);
         }
     }
 }

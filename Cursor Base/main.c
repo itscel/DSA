@@ -1,9 +1,14 @@
 #include "cursorbase.h"
 #include <stdio.h>
 
-main(){
+int main()
+{
     CBase CB;
 
     init(&CB);
-    
+    insert(&CB, 'C');
+    insert(&CB, 'E');
+    insert(&CB, 'A');
+    insert(&CB, 'B');
+    display(CB);
 }
