@@ -22,11 +22,3 @@ void init(CBase *CB){
     }
     CB->avail=9;
 }
-
-void insert(CBase *CB, char elem){
-
-    if(CB->avail>-1){
-        CB->elem[CB->avail].data=elem;
-        CB->avail--;
-    }
-}
