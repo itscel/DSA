@@ -41,9 +41,9 @@ void display(CBase CB)
     int x;
     if (CB.avail <= MAX - 1)
     {
-        for (x = MAX - 1; i != CB.avail; i = CB.elem[i].next)
+        for (x = MAX - 1; x != CB.avail; x = CB.elem[x].next)
         {
-            printf("Value: %d", CB.elem[i].data);
+            printf("Value: %d", CB.elem[x].data);
         }
     }
 }
