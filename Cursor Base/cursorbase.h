@@ -3,30 +3,49 @@
 #include <stdio.h>
 #define MAX 10
 
-typedef struct{
+typedef struct
+{
     char data;
     int next;
-}Node;
+} Node;
 
-typedef struct{
+typedef struct
+{
     Node elem[MAX];
     int avail;
-}CBase;
+} CBase;
 
-void init(CBase *CB){
+void init(CBase *CB)
+{
     int i;
 
-
-    for(i=MAX-1;i>=0;i--){
-        CB->elem[i].next=i-1;
+    for (i = MAX - 1; i >= 0; i--)
+    {
+        CB->elem[i].next = i - 1;
     }
-    CB->avail=9;
+    CB->avail = 9;
 }
 
-void insert(CBase *CB, char elem){
+void insert(CBase *CB, char elem)
+{
     int x;
-    if(CB->avail>-1){
-        CB->elem[CB->avail].data=elem;
+    if (CB->avail > -1)
+    {
+        CB->elem[CB->avail].data = elem;
         CB->avail--;
     }
 }
+
+void display(CBase CB)
+{
+    int x;
+    if (CB.avail <= MAX - 1)
+    {
+        for (x = MAX - 1; i != CB.avail; i = CB.elem[i].next)
+        {
+            printf("Value: %d", CB.elem[i].data);
+        }
+    }
+}
+
+#endif
