@@ -5,7 +5,7 @@
 #include <stdbool.h>
 
 #define MAX 8
-
+// New
 typedef struct node
 {
 	int data;
