@@ -11,4 +11,7 @@ typedef struct{
     List *rear;
 }Queue;
 
-void init(Queue)
+void init(Queue *QL){
+    QL->front=NULL;
+    QL->rear=NULL;
+}
