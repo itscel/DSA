@@ -47,5 +47,6 @@ void display(CBase CB)
         }
     }
 }
+// new
 
 #endif
