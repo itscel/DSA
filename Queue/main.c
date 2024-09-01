@@ -1,8 +1,11 @@
 #include <stdio.h>
 #include "queue.h"
 
-int main(){
+int main()
+{
     Queue QL;
 
     init(&QL);
+    insert(&QL, 'c');
+    display(&QL);
 }
